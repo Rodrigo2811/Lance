@@ -3,6 +3,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 
+
+
     &__item {
         background-color: rgba(250, 250, 250, .4);
         border-radius: 1rem;
@@ -56,4 +58,11 @@
             box-shadow: 0 0 2px 2px $color-secondary;
         }
     }
+    @media (max-width: 767px){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }    
 }
+
+

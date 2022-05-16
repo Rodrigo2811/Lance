@@ -1,10 +1,11 @@
-
 .nav {
     display: flex;
-   
+
     justify-content: space-between;
     width: 280px;
     align-items: center;
+
+
 
     &__item {
         color: $font-color-primary;
@@ -15,7 +16,16 @@
             color: $color-secondary;
             animation: toTop;
             animation-duration: 1s;
-        
+
         }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            a,
+            [class="nav__item"]{
+                color: red;
+                     margin-left: 30px;
+            }
+         }
     }
 }
+
+

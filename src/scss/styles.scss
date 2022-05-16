@@ -10,10 +10,14 @@ $font-size-nav: 1.8rem;
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 @import 'nav';
 
+
+
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
 
 body {
     background-color: $color-primary;
@@ -33,6 +37,7 @@ article {
         color: $color-secondary;
         font-size: 3rem;
         text-align: left;
+      
     }
 
 }
@@ -67,6 +72,9 @@ section {
     max-width: 90vw;
 }
 
+
+
+
 @import 'animations';
 @import 'header';
 @import 'sobre';
@@ -74,3 +82,13 @@ section {
 @import 'vitrine';
 @import 'steps';
 @import 'footer';
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    [class*="col-"]{
+        display: inline;
+        width: 100%;
+
+    }
+
+
+}
